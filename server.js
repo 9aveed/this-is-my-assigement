@@ -8,7 +8,7 @@ app.use(express.urlencoded());
 app.use(cors());
 
 mongoose.connect(
-  "mongodb://localhost:27017/testdb",
+  "mongodb+srv://veer:54321@cluster0.mf5qwdn.mongodb.net/heloo?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -38,7 +38,7 @@ app.post("/login", (req, res) => {
         res.send({ message: "Login successfully", user: user });
       } else {
         res.send({ message: "Password and confirm password didn't match" });
-      }
+      }//mongodb://localhost:27017/testdb
     } else {
       res.send({ message: "Please login to proceed" });
     }
@@ -72,5 +72,5 @@ app.post("/signup", (req, res) => {
 });
 
 app.listen(8000, () => {
-  console.log("Server starting at 8000");
+  console.log("Server starting at 3000");
 });
