@@ -2,8 +2,8 @@ version: '3.7'
 services:
   frontend:
     container_name: my-app
-    image: navid12/naveed
     build:
+      image: navid12/naveed
       context: ./my-app
       dockerfile: dockerfile
     ports:
@@ -16,8 +16,8 @@ services:
   
   backend:
     container_name: server
-    image: navid12/back
     build:
+      image: navid12/back
       context: ./
       dockerfile: Dockerfile
     ports:
