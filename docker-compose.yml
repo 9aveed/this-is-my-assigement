@@ -2,7 +2,7 @@ version: '3.7'
 services:
   frontend:
     container_name: my-app
-     image: navid12/naveed
+    image: navid12/naveed
     build:
       context: ./my-app
       dockerfile: dockerfile
