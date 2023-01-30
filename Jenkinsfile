@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build and Push Docker Image') {
             steps {
-                sh 'docker login -u naveedalam71 -naveed12345'
+                sh 'docker login -u naveedalam71 -naveed123456'
                 sh 'docker-compose build'
             }
         }
